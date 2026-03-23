@@ -1,0 +1,232 @@
+.root {
+    -fx-padding: 20px;
+    -fx-background-image: url("/img/java-img.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-attachment: fixed;
+}
+
+/* GridPane pour les panneaux principaux */
+.grid-pane {
+    -fx-background-color: transparent;
+}
+
+/* Pour forcer les hauteurs égales */
+.vbox, .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/* Boutons améliorés */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #9b0101, #670000);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.3, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #cc0000, #800000);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 6, 0.3, 0, 3);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #670000, #330000);
+}
+
+/* Radio buttons améliorés */
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.radio-button .radio {
+    -fx-border-color: #9b0101;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-color: transparent;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #9b0101;
+}
+
+.radio-button .dot {
+    -fx-mark-highlight-color: white;
+    -fx-mark-color: white;
+}
+
+/* Labels */
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0.5, 1, 1);
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-background-radius: 5;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #9b0101;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+.combo-box:hover {
+    -fx-effect: dropshadow(gaussian, rgba(155, 1, 1, 0.5), 5, 0, 0, 1);
+}
+
+/* TextArea avec fond bien visible */
+.text-area {
+    -fx-border-color: #9b0101;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-text-fill: #1a1a1a;
+    -fx-font-size: 13px;
+    -fx-control-inner-background: rgba(255, 255, 255, 0.95);
+}
+
+.text-area .content {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+}
+
+.text-area:focused {
+    -fx-border-color: #ff3333;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(255, 51, 51, 0.3), 5, 0, 0, 0);
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+}
+
+/* Panels */
+.vbox {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-background-radius: 10;
+}
+
+/* Séparateurs */
+.separator .line {
+    -fx-border-color: #9b0101;
+    -fx-border-width: 1px;
+}
+
+/* TITRES SECTIONS */
+.label[text="CONFIGURATION"],
+.label[text="GÉNÉRATION DE CLÉS"],
+.label[text="CLÉS GÉNÉRÉES"],
+.label[text="OPÉRATION"],
+.label[text="ENTRÉE"],
+.label[text="SORTIE"] {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffcccc;
+    -fx-font-weight: 900;
+    -fx-padding: 0 0 5 0;
+}
+
+/* Scrollbar personnalisée */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: linear-gradient(to bottom, #1a1a1a 0%, #4a0000 50%, #1a1a1a 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to bottom, #ff0000 0%, #9b0101 50%, #670000 100%);
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff3333 0%, #cc0000 50%, #800000 100%);
+}
+
+.scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: linear-gradient(to bottom, #cc0000 0%, #670000 50%, #330000 100%);
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: #670000;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .increment-button:hover,
+.scroll-bar:vertical .decrement-button:hover {
+    -fx-background-color: #9b0101;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: white;
+}
+
+/* Alerte - CORRIGÉ */
+.dialog-pane {
+    -fx-background-color: rgba(0, 0, 0, 0.9);
+    -fx-border-color: #9b0101;
+    -fx-border-width: 2;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+/* CORRECTION : Pas de :header, on utilise la classe header-panel directement */
+.dialog-pane > .header-panel {
+    -fx-background-color: #9b0101;
+}
+
+.dialog-pane > .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+/* Boutons dans les alertes */
+.dialog-pane .button {
+    -fx-background-color: #9b0101;
+    -fx-text-fill: white;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #cc0000;
+}
+
+/* Styles spécifiques pour la section signature */
+.vbox > .label[text="Signature RSA"] {
+    -fx-text-fill: #ff9999;
+    -fx-font-weight: bold;
+}
+
+/* Pour les titres de sections dans les panels */
+.vbox > .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffcccc;
+}
